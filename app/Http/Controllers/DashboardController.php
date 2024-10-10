@@ -38,10 +38,11 @@ class DashboardController extends Controller
             ->count();
 
         $activeTasks = Task::query()
-            ->whereIn('status', ['pending', 'in_progress'])
+            ->whereIn('status', ['pending', 'in_progress', 'completed'])
             ->where('assigned_user_id', $user->id)
             ->limit(10)
             ->get();
+            
         $activeTasks = TaskResource::collection($activeTasks);
         return inertia(
             'Dashboard',

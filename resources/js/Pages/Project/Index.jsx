@@ -54,18 +54,18 @@ export default function Index({ auth, projects, queryParams = null, success }) {
       header={
         <div className="flex justify-between items-center">
           <h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            Projects
+          Projets
           </h2>
           <Link
             href={route("project.create")}
             className="bg-emerald-500 py-1 px-3 text-white rounded shadow transition-all hover:bg-emerald-600"
           >
-            Add new
+            Ajouter nouveau
           </Link>
         </div>
       }
     >
-      <Head title="Projects" />
+      <Head title="Projets" />
 
       <div className="py-12">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -95,7 +95,7 @@ export default function Index({ auth, projects, queryParams = null, success }) {
                         sort_direction={queryParams.sort_direction}
                         sortChanged={sortChanged}
                       >
-                        Name
+                        Nom
                       </TableHeading>
 
                       <TableHeading
@@ -104,7 +104,7 @@ export default function Index({ auth, projects, queryParams = null, success }) {
                         sort_direction={queryParams.sort_direction}
                         sortChanged={sortChanged}
                       >
-                        Status
+                        Statut
                       </TableHeading>
 
                       <TableHeading
@@ -113,7 +113,7 @@ export default function Index({ auth, projects, queryParams = null, success }) {
                         sort_direction={queryParams.sort_direction}
                         sortChanged={sortChanged}
                       >
-                        Create Date
+                        Date de création
                       </TableHeading>
 
                       <TableHeading
@@ -122,9 +122,9 @@ export default function Index({ auth, projects, queryParams = null, success }) {
                         sort_direction={queryParams.sort_direction}
                         sortChanged={sortChanged}
                       >
-                        Due Date
+                        Date d'échéance
                       </TableHeading>
-                      <th className="px-3 py-3">Created By</th>
+                      <th className="px-3 py-3">Créé par</th>
                       <th className="px-3 py-3 text-right">Actions</th>
                     </tr>
                   </thead>
@@ -151,10 +151,10 @@ export default function Index({ auth, projects, queryParams = null, success }) {
                             searchFieldChanged("status", e.target.value)
                           }
                         >
-                          <option value="">Select Status</option>
-                          <option value="pending">Pending</option>
-                          <option value="in_progress">In Progress</option>
-                          <option value="completed">Completed</option>
+                          <option value="">Sélectionner le statut</option>
+                          <option value="pending">En attente</option>
+                          <option value="in_progress">En cours</option>
+                          <option value="completed">Terminé</option>
                         </SelectInput>
                       </th>
                       <th className="px-3 py-3"></th>
@@ -200,13 +200,13 @@ export default function Index({ auth, projects, queryParams = null, success }) {
                             href={route("project.edit", project.id)}
                             className="font-medium text-blue-600 dark:text-blue-500 hover:underline mx-1"
                           >
-                            Edit
+                            Modifier
                           </Link>
                           <button
                             onClick={(e) => deleteProject(project)}
                             className="font-medium text-red-600 dark:text-red-500 hover:underline mx-1"
                           >
-                            Delete
+                            Supprimer
                           </button>
                         </td>
                       </tr>

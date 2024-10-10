@@ -28,7 +28,7 @@ export default function Dashboard({
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div className="p-6 text-gray-900 dark:text-gray-100">
               <h3 className="text-amber-500 text-2xl font-semibold">
-                Pending Tasks
+              Tâches en attente
               </h3>
               <p className="text-xl mt-4">
                 <span className="mr-2">{myPendingTasks}</span>/
@@ -39,7 +39,7 @@ export default function Dashboard({
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div className="p-6 text-gray-900 dark:text-gray-100">
               <h3 className="text-blue-500 text-2xl font-semibold">
-                In Progress Tasks
+              Tâches en cours
               </h3>
               <p className="text-xl mt-4">
                 <span className="mr-2">{myProgressTasks}</span>/
@@ -50,7 +50,7 @@ export default function Dashboard({
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div className="p-6 text-gray-900 dark:text-gray-100">
               <h3 className="text-green-500 text-2xl font-semibold">
-                Completed Tasks
+              Tâches complètes
               </h3>
               <p className="text-xl mt-4">
                 <span className="mr-2">{myCompletedTasks}</span>/
@@ -63,17 +63,17 @@ export default function Dashboard({
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
             <div className="p-6 text-gray-900 dark:text-gray-100">
               <h3 className="text-gray-200 text-xl font-semibold">
-                My Active Tasks
+              Mes tâches actives
               </h3>
 
               <table className="mt-3 w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 border-b-2 border-gray-500">
                   <tr>
                     <th className="px-3 py-3">ID</th>
-                    <th className="px-3 py-3">Project Name</th>
-                    <th className="px-3 py-3">Name</th>
+                    <th className="px-3 py-3">Nom du projet</th>
+                    <th className="px-3 py-3">Nom</th>
                     <th className="px-3 py-3">Status</th>
-                    <th className="px-3 py-3">Due Date</th>
+                    <th className="px-3 py-3">Date d'échéance</th>
                   </tr>
                 </thead>
                 <tbody>

@@ -24,12 +24,12 @@ export default function Create({ auth }) {
       header={
         <div className="flex justify-between items-center">
           <h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            Create new User
+          Créer un nouvel utilisateur
           </h2>
         </div>
       }
     >
-      <Head title="Users" />
+      <Head title="Utilisateurs" />
 
       <div className="py-12">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -39,7 +39,7 @@ export default function Create({ auth }) {
               className="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg"
             >
               <div className="mt-4">
-                <InputLabel htmlFor="user_name" value="User Name" />
+                <InputLabel htmlFor="user_name" value="Nom d'utilisateur" />
 
                 <TextInput
                   id="user_name"
@@ -54,7 +54,7 @@ export default function Create({ auth }) {
                 <InputError message={errors.name} className="mt-2" />
               </div>
               <div className="mt-4">
-                <InputLabel htmlFor="user_email" value="User Email" />
+                <InputLabel htmlFor="user_email" value="Email de l'utilisateur" />
 
                 <TextInput
                   id="user_email"
@@ -69,7 +69,7 @@ export default function Create({ auth }) {
               </div>
 
               <div className="mt-4">
-                <InputLabel htmlFor="user_password" value="Password" />
+                <InputLabel htmlFor="user_password" value="Mot de passe" />
 
                 <TextInput
                   id="user_password"
@@ -86,7 +86,7 @@ export default function Create({ auth }) {
               <div className="mt-4">
                 <InputLabel
                   htmlFor="user_password_confirmation"
-                  value="Confirm Password"
+                  value="Confirmer le mot de passe"
                 />
 
                 <TextInput
@@ -111,10 +111,10 @@ export default function Create({ auth }) {
                   href={route("user.index")}
                   className="bg-gray-100 py-1 px-3 text-gray-800 rounded shadow transition-all hover:bg-gray-200 mr-2"
                 >
-                  Cancel
+                  Annuler
                 </Link>
                 <button className="bg-emerald-500 py-1 px-3 text-white rounded shadow transition-all hover:bg-emerald-600">
-                  Submit
+                Soumettre
                 </button>
               </div>
             </form>

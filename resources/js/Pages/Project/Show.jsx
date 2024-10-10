@@ -18,12 +18,12 @@ export default function Show({ auth, success, project, tasks, queryParams }) {
             href={route("project.edit", project.id)}
             className="bg-emerald-500 py-1 px-3 text-white rounded shadow transition-all hover:bg-emerald-600"
           >
-            Edit
+            Modifier
           </Link>
         </div>
       }
     >
-      <Head title={`Project "${project.name}"`} />
+      <Head title={`Projet "${project.name}"`} />
       <div className="py-12">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -38,16 +38,16 @@ export default function Show({ auth, success, project, tasks, queryParams }) {
               <div className="grid gap-1 grid-cols-2 mt-2">
                 <div>
                   <div>
-                    <label className="font-bold text-lg">Project ID</label>
+                    <label className="font-bold text-lg">ID du projet</label>
                     <p className="mt-1">{project.id}</p>
                   </div>
                   <div className="mt-4">
-                    <label className="font-bold text-lg">Project Name</label>
+                    <label className="font-bold text-lg">Nom du projet</label>
                     <p className="mt-1">{project.name}</p>
                   </div>
 
                   <div className="mt-4">
-                    <label className="font-bold text-lg">Project Status</label>
+                    <label className="font-bold text-lg">Statut du projet</label>
                     <p className="mt-1">
                       <span
                         className={
@@ -60,28 +60,28 @@ export default function Show({ auth, success, project, tasks, queryParams }) {
                     </p>
                   </div>
                   <div className="mt-4">
-                    <label className="font-bold text-lg">Created By</label>
+                    <label className="font-bold text-lg">Créé par</label>
                     <p className="mt-1">{project.createdBy.name}</p>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <label className="font-bold text-lg">Due Date</label>
+                    <label className="font-bold text-lg">Date d'échéance</label>
                     <p className="mt-1">{project.due_date}</p>
                   </div>
                   <div className="mt-4">
-                    <label className="font-bold text-lg">Create Date</label>
+                    <label className="font-bold text-lg">Date de création</label>
                     <p className="mt-1">{project.created_at}</p>
                   </div>
                   <div className="mt-4">
-                    <label className="font-bold text-lg">Updated By</label>
+                    <label className="font-bold text-lg">Mis à jour par</label>
                     <p className="mt-1">{project.updatedBy.name}</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-4">
-                <label className="font-bold text-lg">Project Description</label>
+                <label className="font-bold text-lg">Description du projet</label>
                 <p className="mt-1">{project.description}</p>
               </div>
             </div>

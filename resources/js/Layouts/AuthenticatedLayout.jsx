@@ -32,25 +32,25 @@ export default function AuthenticatedLayout({ user, header, children }) {
                   href={route("project.index")}
                   active={route().current("project.index")}
                 >
-                  Projects
+                  Projets
                 </NavLink>
                 <NavLink
                   href={route("task.index")}
                   active={route().current("task.index")}
                 >
-                  All Tasks
+                  Toutes les tâches
                 </NavLink>
                 <NavLink
                   href={route("user.index")}
                   active={route().current("user.index")}
                 >
-                  Users
+                  Utilisateurs
                 </NavLink>
                 <NavLink
                   href={route("task.myTasks")}
                   active={route().current("task.myTasks")}
                 >
-                  My Tasks
+                  Mes tâches
                 </NavLink>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function AuthenticatedLayout({ user, header, children }) {
                       method="post"
                       as="button"
                     >
-                      Log Out
+                      Se déconnecter
                     </Dropdown.Link>
                   </Dropdown.Content>
                 </Dropdown>
@@ -170,7 +170,7 @@ export default function AuthenticatedLayout({ user, header, children }) {
                 href={route("logout")}
                 as="button"
               >
-                Log Out
+                Se déconnecter
               </ResponsiveNavLink>
             </div>
           </div>
